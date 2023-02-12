@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>web app</title>
+    <script src="./js/EditorCanvas.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./styles/canvas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <div class="KindOfButtons">
+            <button onclick="custom()">
+                <div>Luźne</div>
+            </button>
+            <button onclick="line()">
+                <div>Kreski</div>
+            </button>
+            <button onclick="around()">
+                <div>okrąg</div>
+            </button>
+            <button onclick="clear_()">czyść</button>
+        </div>
+
+        <div class="KindOfButtons" >
+            <p>Grubość: <span id="displayLineWidth">10</span></p>
+            <input type="range" min="0" max="50" value="5" id="lineWidth">
+
+            <div>
+                <div>Kolor</div>
+                <input type="color" id="lineColor">
+            </div>
+        </div>
+
+        <div class="KindOfButtons" style="color: black;">
+            <button id="nameButton" onclick="show()">SAVE</button>
+            <div id="nameInput" style="display: none;">
+                
+                <input type="text" id="nameOfpicture" placeholder="jak nazwiesz rysunek?">
+
+            </div>
+            
+
+        </div>
+    </header>
+    <main>
+        <canvas id="canvas"></canvas>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: #ddd;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.existingDrawings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drawing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px #333;
+}
+
+.drawing img {
+  max-width: 80%;
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+}
+
+.drawing h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: .5rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.button_new_draw {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: .5em 1.5em;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .drawing img {
+      max-width: 100%;
+      border-radius: .5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .newDrawingButton {
+      font-size: 1rem;
+      width: 150px;
+      padding: .5rem 1rem;
+      margin: 0 auto;
+  }
+
+  .drawing {
+      font-size: 1rem;
+      padding: .5rem 1rem;
+      margin: 0 auto;
+  }
+}
